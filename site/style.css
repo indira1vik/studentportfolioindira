@@ -8,6 +8,7 @@
 body{
     background-color: #F0F6F6;
 }
+
 /*----------------------Navbar------------------------------*/
 nav{
     position: fixed;
@@ -18,22 +19,19 @@ nav{
     justify-content: space-between;
     align-items: center;
 }
-.brand{
-    padding-left: 230px;
-}
-.darkmode{
-    cursor: pointer;
-}
 #logo{
     margin: 10px;
     width: 125.4px;
     height:40.8px;
 }
-#theme{
-    margin: 10px;
+#themebox{
     border-radius: 12px;
-    width: 40px;
-    height: 40px;
+    border: none;
+}
+#theme{
+    border-radius: 12px;
+    width: 35px;
+    height: 35px;
 }
 .navlist{
     display: flex;
@@ -41,6 +39,7 @@ nav{
     justify-content: space-around;
     margin-bottom: 0px;
     padding-left: 0px;
+    align-items: center;
 }
 .navlist li{
     list-style: none;
@@ -67,8 +66,15 @@ nav{
 }
 .text2{
     font-family: 'Varela Round', sans-serif;
-    font-size: 30px;
-    font-weight: 900;
+    font-size: 32px;
+    font-weight: 700;
+    color: #084B83;
+}
+/*-------------------------Container 2 & 3 & 4---------------*/
+.topic{
+    font-family: 'Varela Round', sans-serif;
+    font-size: 25px;
+    font-weight: 550;
     color: #084B83;
 }
 .container2{
@@ -92,7 +98,7 @@ nav{
 }
 .words a{
     color: #084B83;
-    font-size: 18px;
+    font-size: 20px;
     text-decoration: none;
     font-family: 'Varela Round', sans-serif;
 }
@@ -107,6 +113,29 @@ nav{
     width: 384px;
     height:216px;
 }
+.proj1{
+    display: flex;
+    padding-bottom: 30px;
+    align-items: center;
+}
+.para{
+    padding-left: 40px;
+}
+.subtopic{
+    color: #084B83;
+    font-size: 20px;
+    font-family: 'Varela Round', sans-serif;
+}
+.proj2{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    padding-bottom: 30px;
+}
+.paraop{
+    padding-right: 40px;
+}
+/*--------------last-----------------------*/
 .footer{
     padding: 20px;
     background-image: linear-gradient(0deg,#42BFDD,#BBE6E4);
@@ -120,28 +149,7 @@ nav{
     height: 40px;
     border-radius: 20px;
 }
-.proj1{
-    display: flex;
-    padding-bottom: 30px;
-    align-items: center;
-}
-.para{
-    padding-left: 40px;
-}
-.subtopic{
-    color: #084B83;
-    font-size: 18px;
-    font-family: 'Varela Round', sans-serif;
-}
-.proj2{
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
-    padding-bottom: 30px;
-}
-.paraop{
-    padding-right: 40px;
-}
+/*------------------------divider------------------------*/
 hr{
     margin: 0px;
     opacity: 1;
@@ -152,6 +160,7 @@ hr{
     border-radius: 2px;
     border-top:4px solid #084B83;
 }
+/*--------------footer--------------------------*/
 .contact{
     padding: 40px 40px 0px 40px;
     display: flex;
@@ -188,4 +197,51 @@ hr{
 }
 .list a{
     text-decoration: none;
+}
+/*--------------------------darkmode color change-------------------*/
+.darkmode .backchange{
+    background-image: linear-gradient(0deg,#696969, #0A0A0A);
+}
+.darkmode .navlist a{
+    color: #F0F6F6;
+}
+.darkmode .container1{
+    background-image: linear-gradient(180deg,#696969, #0A0A0A);
+}
+.darkmode .text1{
+    color: #F0F6F6;
+}
+.darkmode .text2{
+    color: #F0F6F6;
+}
+.darkmode .container2{
+    background-color: #696969;
+    color: #F0F6F6;
+}
+.darkmode .topic{
+    color: #F0F6F6;
+}
+.darkmode .container3{
+    background-color: #696969;
+    color: #F0F6F6;
+}
+.darkmode .container4{
+    background-color: #696969;
+    color: #F0F6F6;
+}
+.darkmode .round{
+    border-top:4px solid #F0F6F6;
+}
+.darkmode .contact{
+    background-color: #696969;
+    color: #F0F6F6;
+}
+.darkmode .footer{
+    background-image: linear-gradient(180deg,#696969, #0A0A0A);
+}
+.darkmode .subtopic{
+    color: #F0F6F6;
+}
+.darkmode .place a{
+    color: #F0F6F6;
 }
